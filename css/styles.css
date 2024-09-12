@@ -76,18 +76,8 @@ ul, ol {
     text-align: center;
 }
 
-/* Уникальные стили для главной страницы */
-body {
-    background-color: #e0f7fa;
-}
-
 header {
     background: #00796b;
-}
-
-/* Уникальные стили для страницы институтов */
-.institutes-page {
-    background-color: #fff3e0;
 }
 
 table {
@@ -106,9 +96,16 @@ th {
     background-color: #ffcc80;
 }
 
-/* Уникальные стили для страницы контактов */
-.contacts-page {
-    background-color: #e1bee7;
+body.home {
+    background-color: #FFFFFF; /* Цвет фона главной страницы */
+}
+
+body.institutes {
+    background-color: #2d009670; /* Цвет фона страницы институтов */
+}
+
+body.contacts {
+    background-color: #007e6d5d; /* Цвет фона страницы контактов */
 }
 
 h2 {
@@ -124,33 +121,5 @@ a {
 }
 
 a:hover {
-    color: #d40f081f;
-}
-
-button {
-    background-color: #00796b;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #d40f081f;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #000000;
 }
