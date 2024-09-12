@@ -1,15 +1,16 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    text-align: center; 
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background: #3b5998; 
+    color: #fff;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -23,31 +24,70 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-main {
+/* Селектор класса */
+.main-content {
     padding: 20px;
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-footer {
+/* Селектор идентификатора */
+#footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Селектор по тегу */
+h2 {
+    color: #333;
+}
+
+/* Селектор атрибута */
+img[alt] {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Селектор потомка */
+section p {
+    margin: 10px 0;
+}
+
+/* Селектор группы */
+h1, h2 {
+    font-weight: normal;
+}
+
+/* Селектор псевдокласса */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Селектор дочернего элемента */
+ul > li {
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    list-style-position: inside; 
+    padding: 0; 
+    text-align: center;
+}
+
+/* Уникальные стили для главной страницы */
+body {
+    background-color: #e0f7fa;
+}
+
+header {
+    background: #00796b;
+}
+
+/* Уникальные стили для страницы институтов */
+.institutes-page {
+    background-color: #fff3e0;
 }
 
 table {
@@ -63,5 +103,54 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #ffcc80;
+}
+
+/* Уникальные стили для страницы контактов */
+.contacts-page {
+    background-color: #e1bee7;
+}
+
+h2 {
+    color: #0004ff;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+a {
+    color: #00796b;
+}
+
+a:hover {
+    color: #d40f081f;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d40f081f;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
